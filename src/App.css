@@ -17,3 +17,22 @@ li {
   padding: 8px 0;
   border-bottom: 1px solid var(--border);
 }
+
+/* 입력창과 버튼을 한 줄에 나란히 놓습니다. */
+.todo-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+/* flex: 1 은 "남는 가로 공간을 입력창이 다 차지하라"는 뜻입니다. */
+.todo-input input {
+  flex: 1;
+  padding: 8px;
+}
+
+/* 완료된 할 일에만 취소선을 긋고, 글자를 흐리게 해서 구분이 쉽게 합니다. */
+.todo-text.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
